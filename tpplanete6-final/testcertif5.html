@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Essai</title>
+<script>
+var objet = {
+    prenom: "pierre",
+    age: 60
+};
+
+var chaine = JSON.stringify(objet); 
+var chaine2 = '{"propriete1":"valeur propriete","propriete2":5}';
+var objet2 = JSON.parse(chaine2);
+
+alert(chaine); 
+alert(objet2.propriete2); 
+</script>
+</head>
+<body> 
+    <input type="button" value="demarrer" id="demarrer">
+     <input type="button" value="arreter" id="arreter">
+     <input type="text" disabled id="x">
+     <input type="text" disabled id="y">                                                                                  
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<SELECT id="boissons" size="1">
+<OPTION>suze
+<OPTION>fernet
+<OPTION>rhum
+<OPTION>gin
+</SELECT>
+<ul id="uneliste">
+  <li>eau</li>
+  <li>vin</li>
+</ul>
+<button onclick="maFonction()">Essai</button>
+<script>
+function maFonction() {
+    var e = document.getElementById("boissons");
+    var boisson = e.options[e.selectedIndex].value;
+  
+    var node = document.createElement("LI");
+    var textnode = document.createTextNode(boisson);
+    node.appendChild(textnode);
+    document.getElementById("uneliste").appendChild(node);
+}
+</script>
+</body>
+</html>

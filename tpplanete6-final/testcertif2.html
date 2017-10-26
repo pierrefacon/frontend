@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Exemple</title></head>
+<body>
+<p>Exemple</p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+var str1 = "chaine1";
+var str2 = "chaine2";
+var retour  =  (str1===str2)?"vrai":"faux";
+var text = "";
+var text1 = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "La nombre est " + i + "<br>";
+}
+for (i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text1 += "Le nombre est " + i + "<br>";
+}
+document.getElementById("demo1").innerHTML = text;
+document.getElementById("demo2").innerHTML = text1;
+</script>
+</body>
+</html>
+
